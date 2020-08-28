@@ -1,0 +1,106 @@
+
+body{
+    margin: 0;
+}
+
+.first{
+    background-image: url("img/image.php.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.texto{
+    color:white;
+    margin-left: 5px;
+}
+.my_image img{
+    width:200px;
+    height: 210px;
+    border-radius: 50%;
+}
+.conteiner{
+    display: grid;
+    grid-gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 32vw);
+    grid-template-rows:  repeat(1, 32vh);
+    justify-content: center;
+    animation-name: movimiento;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+	/*align-content: center;*/
+}
+.studies{
+    background-color: wheat;
+    margin:1vw;
+    padding: 5px;
+}
+.studies h2{
+    text-align: center;
+    margin:0;
+}
+.studies h3{
+    text-align: center;
+}
+
+.skills{
+    background-color: tan;
+    margin:1vw;
+}
+.skills h2{
+    text-align: center;
+    margin:0;
+}
+.skills h3{
+    text-align: center;
+}
+.skills p{
+    padding:5px;
+  
+}
+.projects{
+    background-color: rosybrown;
+    margin:1vw;
+}
+.projects h2{
+    text-align: center;
+    margin:0;
+}
+.projects p{
+    padding:5px;
+}
+.projects img{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+.contact{
+    
+}
+.contact img{
+    width: 50px;
+    height: 50px;
+    margin:5px;
+}
+.attributions{
+    background-color: tan;
+}
+
+.skills h2{
+    padding: 0;
+}
+@keyframes movimiento{
+    0%{
+        grid-template-rows:  repeat(1, 32vh);
+    }
+    100%{
+        grid-template-rows:  repeat(1, 100vh);
+    }
+
+}
+
